@@ -1,0 +1,120 @@
+
+.admin-rentals-container {
+    min-height: 100vh;
+    padding: 45px 6%;
+    background: linear-gradient(rgba(239, 248, 239, 0.94), rgba(239, 248, 239, 0.94)),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.admin-rentals-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.admin-rentals-heading h1 {
+    color: #1b5e20;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.admin-rentals-heading p {
+    color: #555;
+    font-size: 16px;
+}
+
+.admin-rentals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+
+.admin-rental-card {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid #2e7d32;
+    transition: transform 0.3s ease;
+}
+
+.admin-rental-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-rental-card h2 {
+    color: #1b5e20;
+    margin-bottom: 18px;
+    font-size: 23px;
+}
+
+.admin-rental-card p {
+    color: #444;
+    margin: 12px 0;
+    line-height: 1.5;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.admin-rental-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.admin-rental-actions button {
+    flex: 1;
+    min-width: 85px;
+    padding: 11px 12px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2e7d32;
+    transition: 0.3s;
+}
+
+.admin-rental-actions button:nth-child(2) {
+    background: #c62828;
+}
+
+.admin-rental-actions button:nth-child(3) {
+    background: #1565c0;
+}
+
+.admin-rental-actions button:hover {
+    opacity: 0.85;
+}
+
+.admin-rental-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.admin-rentals-empty {
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    color: #666;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+    .admin-rentals-container {
+        padding: 30px 5%;
+    }
+
+    .admin-rentals-heading h1 {
+        font-size: 25px;
+    }
+
+    .admin-rental-card {
+        padding: 20px;
+    }
+}

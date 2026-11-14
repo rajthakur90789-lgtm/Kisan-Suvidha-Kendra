@@ -1,0 +1,95 @@
+
+.register-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7f2;
+    padding: 40px 15px;
+    box-sizing: border-box;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+.register-box h2 {
+    text-align: center;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.register-box > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.register-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-box label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+}
+
+.register-box input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.register-box input:focus {
+    outline: none;
+    border-color: #1b4332;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #1b4332;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background: #2d6a4f;
+}
+
+.register-box .login-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-box .login-text a {
+    color: #1b4332;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .register-box {
+        padding: 22px;
+    }
+}

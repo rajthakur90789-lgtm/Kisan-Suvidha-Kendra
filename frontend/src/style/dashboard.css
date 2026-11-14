@@ -1,0 +1,46 @@
+
+.dashboard-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7f2;
+    padding: 30px 15px;
+}
+
+.dashboard-card {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h2 {
+    color: #1b4332;
+    text-align: center;
+}
+
+.dashboard-card > p {
+    text-align: center;
+    color: #666;
+}
+
+.profile-details {
+    margin-top: 25px;
+}
+
+.profile-details p {
+    padding: 12px;
+    margin: 8px 0;
+    background: #f1f8f3;
+    border-radius: 6px;
+    color: #333;
+}
+
+.dashboard-message {
+    text-align: center;
+    margin-top: 50px;
+    color: #1b4332;
+}

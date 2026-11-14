@@ -1,0 +1,159 @@
+
+.crop-disease-container {
+    min-height: 100vh;
+    padding: 45px 6%;
+    background: linear-gradient(135deg, #eef7ed, #f8fbf5);
+}
+
+/* Page Heading */
+.crop-disease-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.crop-disease-header h1 {
+    color: #1b5e20;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.crop-disease-header p {
+    color: #647568;
+    font-size: 16px;
+}
+
+/* Main Card */
+.crop-disease-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(30, 80, 40, 0.10);
+}
+
+.crop-disease-card h2 {
+    color: #245b2a;
+    margin-bottom: 10px;
+}
+
+.crop-disease-card > p {
+    color: #718071;
+    margin-bottom: 25px;
+}
+
+/* Upload Box */
+.crop-upload-box {
+    min-height: 190px;
+    border: 2px dashed #78a879;
+    border-radius: 14px;
+    background: #f5faf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.crop-upload-box:hover {
+    background: #eaf5e8;
+    border-color: #2e7d32;
+}
+
+.crop-upload-box span {
+    font-size: 42px;
+}
+
+.crop-upload-box strong {
+    color: #285d2c;
+    font-size: 17px;
+}
+
+.crop-upload-box small {
+    color: #829182;
+}
+
+.crop-upload-box input {
+    display: none;
+}
+
+/* Image Preview */
+.crop-image-preview {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.crop-image-preview h3 {
+    color: #285d2c;
+    margin-bottom: 15px;
+}
+
+.crop-image-preview img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #dce8d9;
+}
+
+/* Detect Button */
+.crop-detect-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.crop-detect-btn:hover:not(:disabled) {
+    background: #1b5e20;
+}
+
+.crop-detect-btn:disabled {
+    background: #a5b9a5;
+    cursor: not-allowed;
+}
+
+/* Information Section */
+.crop-info {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 25px 30px;
+    background: #e3f1df;
+    border-radius: 14px;
+}
+
+.crop-info h3 {
+    color: #245b2a;
+    margin-bottom: 15px;
+}
+
+.crop-info p {
+    color: #526b52;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .crop-disease-container {
+        padding: 30px 15px;
+    }
+
+    .crop-disease-header h1 {
+        font-size: 25px;
+    }
+
+    .crop-disease-card {
+        padding: 22px;
+    }
+}

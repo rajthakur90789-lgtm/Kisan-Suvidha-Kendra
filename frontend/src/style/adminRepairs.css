@@ -1,0 +1,120 @@
+
+.admin-repairs-container {
+    min-height: 100vh;
+    padding: 45px 6%;
+    background: linear-gradient(rgba(239, 248, 239, 0.94), rgba(239, 248, 239, 0.94)),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.admin-repairs-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.admin-repairs-heading h1 {
+    color: #1b5e20;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.admin-repairs-heading p {
+    color: #555;
+    font-size: 16px;
+}
+
+.admin-repairs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+
+.admin-repair-card {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid #2e7d32;
+    transition: transform 0.3s ease;
+}
+
+.admin-repair-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-repair-card h2 {
+    color: #1b5e20;
+    margin-bottom: 18px;
+    font-size: 23px;
+}
+
+.admin-repair-card p {
+    color: #444;
+    margin: 12px 0;
+    line-height: 1.5;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.admin-repair-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.admin-repair-actions button {
+    flex: 1;
+    min-width: 85px;
+    padding: 11px 12px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2e7d32;
+    transition: 0.3s;
+}
+
+.admin-repair-actions button:nth-child(2) {
+    background: #c62828;
+}
+
+.admin-repair-actions button:nth-child(3) {
+    background: #1565c0;
+}
+
+.admin-repair-actions button:hover {
+    opacity: 0.85;
+}
+
+.admin-repair-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.admin-repairs-empty {
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    color: #666;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+    .admin-repairs-container {
+        padding: 30px 5%;
+    }
+
+    .admin-repairs-heading h1 {
+        font-size: 25px;
+    }
+
+    .admin-repair-card {
+        padding: 20px;
+    }
+}

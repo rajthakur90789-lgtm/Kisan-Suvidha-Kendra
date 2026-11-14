@@ -1,0 +1,20 @@
+$kind: http-request
+name: http://localhost:5000/api/auth/register
+description: ""
+url: http://localhost:5000/api/complaints/track/KSK-179380820444
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"category\": \"Crop Problem\",\r
+
+    \    \"description\": \"Meri gehun ki fasal mein rog lag raha hai.\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_149m}}"
+examples: .resources/http-localhost-5000-api-auth-register.resources/examples
+order: 1000

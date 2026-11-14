@@ -1,0 +1,208 @@
+
+.rentals-container {
+    min-height: 100vh;
+    padding: 50px 6%;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(232, 242, 231, 0.94),
+            rgba(247, 250, 245, 0.96),
+            rgba(225, 239, 224, 0.93)
+        ),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920")
+        center/cover fixed;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 30px;
+    align-content: start;
+}
+
+/* Page Heading */
+.rentals-heading {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+}
+
+.rentals-heading span {
+    display: inline-block;
+    background: #dcefe0;
+    color: #176b35;
+    padding: 8px 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.rentals-heading h1 {
+    color: #153d26;
+    font-size: 36px;
+    margin: 16px 0 8px;
+    font-weight: 750;
+}
+
+.rentals-heading p {
+    color: #647568;
+    font-size: 15px;
+}
+
+/* Form and History Cards */
+.rental-form-card,
+.rental-history {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(26, 70, 38, 0.09);
+    border: 1px solid rgba(210, 229, 211, 0.9);
+    backdrop-filter: blur(8px);
+}
+
+.rental-form-card h2,
+.rental-history h2 {
+    color: #205a32;
+    font-size: 23px;
+    margin: 0 0 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e7eee7;
+}
+
+/* Form Fields */
+.rental-form-card label {
+    display: block;
+    color: #294b32;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 17px 0 8px;
+}
+
+.rental-form-card input,
+.rental-form-card select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce6dc;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    background: #fbfdfb;
+    color: #354b39;
+    transition: 0.3s;
+}
+
+.rental-form-card input:focus,
+.rental-form-card select:focus {
+    border-color: #27843d;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(39, 132, 61, 0.10);
+}
+
+/* Submit Button */
+.rental-form-card button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #27843d, #17632e);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rental-form-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(39, 132, 61, 0.22);
+}
+
+/* Success and Error Message */
+.rental-message {
+    background: #e8f6eb;
+    color: #247438;
+    padding: 13px;
+    border-radius: 9px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    border-left: 4px solid #27843d;
+}
+
+/* Rental History */
+.rental-history {
+    min-height: 250px;
+}
+
+.rentals-list {
+    display: grid;
+    gap: 18px;
+}
+
+.rental-card {
+    background: #f8fbf8;
+    border: 1px solid #e1eae1;
+    border-left: 4px solid #27843d;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.rental-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(30, 80, 40, 0.08);
+}
+
+.rental-card h3 {
+    color: #205a32;
+    margin: 0 0 14px;
+    font-size: 20px;
+}
+
+.rental-card p {
+    color: #4b584d;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 9px 0;
+    overflow-wrap: anywhere;
+}
+
+.rental-status {
+    display: inline-block;
+    background: #fff1cf;
+    color: #956500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.no-rentals {
+    background: #f7faf7;
+    padding: 30px 20px;
+    border-radius: 10px;
+    color: #667568;
+    text-align: center;
+    border: 1px dashed #cbdacb;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .rentals-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .rentals-container {
+        padding: 30px 5%;
+        background-attachment: scroll;
+    }
+
+    .rentals-heading h1 {
+        font-size: 27px;
+    }
+
+    .rental-form-card,
+    .rental-history {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,184 @@
+
+.admin-products-container {
+    min-height: 100vh;
+    padding: 40px 6%;
+    background: #f4f8f5;
+}
+
+.admin-products-container > h1 {
+    text-align: center;
+    color: #1b4332;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.admin-products-container > p {
+    text-align: center;
+    color: #6b756e;
+    margin-bottom: 35px;
+}
+
+.admin-product-form {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.admin-product-form h2 {
+    color: #1b4332;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.admin-product-form input:not([type="checkbox"]),
+.admin-product-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #d5ded7;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+}
+
+.admin-product-form input:focus,
+.admin-product-form textarea:focus {
+    border-color: #40916c;
+}
+
+.admin-product-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.availability-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 20px;
+    color: #1b4332;
+}
+
+.admin-product-form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #1b4332;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.admin-product-form button:hover {
+    background: #2d6a4f;
+}
+
+.admin-product-form .cancel-btn {
+    background: #6c757d;
+}
+
+.admin-list-heading {
+    text-align: center;
+    color: #1b4332;
+    margin-bottom: 30px;
+}
+
+.admin-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.admin-product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.admin-product-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-product-card > img,
+.admin-product-placeholder {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.admin-product-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9f5ed;
+    font-size: 60px;
+}
+
+.admin-product-info {
+    padding: 20px;
+}
+
+.admin-product-info h3 {
+    color: #1b4332;
+    margin-top: 0;
+}
+
+.admin-product-info p {
+    color: #6b756e;
+    font-size: 14px;
+}
+
+.admin-product-info span {
+    color: #16803c;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.admin-product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.admin-product-actions button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2d6a4f;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-product-actions .delete-btn {
+    background: #dc3545;
+}
+
+@media (max-width: 900px) {
+    .admin-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .admin-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-products-container {
+        padding: 25px 15px;
+    }
+
+    .admin-product-form {
+        padding: 20px;
+    }
+}
